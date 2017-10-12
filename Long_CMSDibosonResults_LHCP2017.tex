@@ -125,24 +125,24 @@ vector boson self-couplings, which arise due to the non-Abelian nature of the
 electroweak gauge group and are exactly predicted by the SM. Deviations from these
 predictions could therefore be an indication of new physics. In addition,
 due to recent theoretical developments, the production cross sections 
-of all proton-proton processes producing vector boson pairs are
-known at next-to-next-to-leading order in QCD, many differentially. 
+of all processes producing vector boson pairs in proton-proton collisions are
+known at next-to-next-to-leading order in QCD -- many differentially. 
 When the perturbative QCD corrections are significant with respect to the experimental
 uncertainties, measurements can directly validate the higher-order perturbative QCD
 calculations.
 
-This report summarizes recent measurements from the CMS collaboration, using
+This report summarizes recent measurements from the CMS collaboration using
 data collected by the CMS detector at $\sqrt{s} =$ 8 and 13 TeV. A brief summary
 of measurements for a variety of vector boson pairs and decays is presented, 
 each offering a unique probe of the SM and possible new physics. Full details of 
 the analyses can be found in the references.
 
-\section{$Z(\nu\nu)\gamma$ Production at 13 TeV}
+\section{Z$(\nu\nu)\gamma$ Production at 13 TeV}
 The production of a Z boson produced in association with a photon,
-with the Z decaying to pair of neutrinos, can only be produced through
-initial-state radiation of a photon from the incoming quarks in the standard model.
-Other production mechanisms could only arise through trilinear gauge boson 
-self-interaction couplings (TGCs) which could arise due to new physics. 
+with the Z decaying to a pair of neutrinos, can only be produced through
+initial-state radiation of a photon from the incoming quarks in the SM.
+Other production mechanisms could arise through trilinear gauge boson 
+self-interaction couplings (TGCs) which would be a sign of new physics. 
 Measurements of this channel for high photon transverse energy are therefore
 sensitive to new physics, and are also important as background measurements to
 dark matter searches in the mono-photon channel.
@@ -160,7 +160,10 @@ with missing transverse momentum arising due to the
 condition that the transverse momentum of the event sum to zero. The contribution of
 these backgrounds is estimated
 by via exploiting their characteristic shape and timing in the ECAL. Other backgrounds 
-enter the selection due to misidentification
+enter the selection due to misidentification or objects escaping the detector acceptance,
+including $\gamma+$jets, W$\rightarrow \ell\nu$, $Z(\rightarrow\ell\ell)\gamma$ and 
+W$(\rightarrow\ell\ell)\gamma$, are estimated from simulated samples, with the exception
+of W decays to electrons and QCD multijet backgrounds which are estimated from data.
 
 The measured fiducial cross section of
 \begin{equation}
@@ -170,31 +173,30 @@ The measured fiducial cross section of
 is found to be in agreement with the standard model prediction of $65.5 \pm 3.3$ fb, computed at
 NNLO with MATRIX. \cite{bleh}
 
-\section{$W^{\pm}Z$ Production at 8 and 13 TeV}
+\section{W$^{\pm}$Z Production with Leptonic Decays at 8 and 13 TeV}
 
 Measurements of WZ production with fully leptonic decays probe the charged
 gauge interactions of the SM. The relatively clean three-lepton final state
 is balanced by a modestly high cross section, allowing a high statistics measurement 
 with controlled systematics. The analysis selects events with three leptons and 
-missing transverse momentum $p_{T}^{miss} > 30$ GeV. The mass of the 3 leptons
-is required to have $m_{3\ell} > $ 100 GeV reject events $Z\gamma$ events where a photon
+missing transverse momentum $p_{T}^{\mathrm{miss}} > 30$ GeV. The condition on the
+mass of the three lepton system,
+$m_{3\ell} > $ 100 GeV is required to reject events $Z\gamma$ events where a photon
 radiated from the leptonic Z decay is misidentified as an electron. Events with
 a b-tagged jet are rejected to reduce $t\bar{t}$ background.
 
-
 \begin{figure}[htb]
   \centering
-    \includegraphics[height=2.8in]{figures/WZCrossSection_vs_sqrtS.pdf}
-    \includegraphics[height=2.8in]{figures/WZ8TeV_ptZ_unfolded.png}
+    \includegraphics[height=2.4in]{figures/WZCrossSection_vs_sqrtS.pdf}
+    \includegraphics[height=2.4in]{figures/WZ8TeV_ptZ_unfolded.png}
     \caption{ (Left) The total $pp \rightarrow WZ$ cross section
       as a function of $\sqrt{s}$ measured by the CMS and 
       ATLAS experiments compared to the predictions of MCFM 7.0 and MATRIX v1.0.0\_beta4. 
       The CMS 13 TeV cross section are calculated for the Z boson mass window $60 - 120$ GeV. 
       The CMS 7 and 8  TeV  cross sections are calculated for the Z boson mass window $71 - 111$ GeV.
       ATLAS measurements are performed with the Z boson mass window $66 - 116$  GeV.
-      (Right) Differential cross section at $sqrt{s} = 8$ TeV as a function
-      of the Z boson transverse momentum,
-      compared to
+      (Right) Differential cross section at $\sqrt{s} = 8$ TeV as a function
+      of the Z boson transverse momentum, compared to
       the fixed-order prediction from MCFM 6.3 and the prediction from
       MadGraph5.1+Pythia6.4, using MLM merging of tree-level contributions 
       for up to two additional partons.
@@ -207,7 +209,7 @@ three prompt isolated leptons ($\ell = e, \mu$), including ZZ, triboson, and
 $t\bar{t}\gamma$, and those processes where nonprompt
 leptons from hadrons decaying to leptons inside jets or jets misidentified as isolated
 leptons pass the signal selection, predominantly $t\bar{t}$ and Drell-Yan. 
-The Nonprompt background is evaluated with a data-driven approach using 
+The nonprompt background is evaluated with a data-driven approach using 
 control regions of events passing the full analysis selection,
 with the exception that one, two, or three leptons pass relaxed identification 
 and isolation requirements but fail the more stringent requirements applied to signal events.
@@ -222,23 +224,24 @@ The production cross section has been measured by the CMS experiment at 7, 8,
 and 13 TeV
 \cite{Khachatryan:2016tgp}.
 These measurements and their agreement with the SM
-predictions, computed at NNLO in QCD with MATRIX and NLO in QCD with MCFM \cite{bleh}
-are summarized in figure~\ref{WZfigs}, which also presents ATLAS results for comparison. 
+predictions, computed at NNLO in QCD with MATRIX~\cite{Grazzini:2016swo} and NLO in 
+QCD with MCFM~\cite{Campbell:2011bn}
+are summarized in Fig.~\ref{WZfigs}, which also presents ATLAS results for comparison. 
 Good agreement with the SM predictions
 is observed. Some tension is seen in the 13 TeV measurement with 2.3 fb$^{-1}$
 and the NNLO prediction, but we note that this measurement is statistically
 limited and await a measurement with an increased 13 TeV dataset.
 
 Differential measurements of WZ production, unfolded using the 
-iterative d'Agostini \cite{bleh} method, are presented using 19.6 fb$^{-1}$
-collected by the CMS experiment in 2012 at 8 TeV. These measurements allow for careful
+iterative d'Agostini \cite{DAgostini:1994fjx} method, are presented using 19.6 fb$^{-1}$
+collected by the CMS experiment in 2012 at 8 TeV. These measurements allow for
 comparisons of theoretical predictions in distributions sensitive 
 to higher-order corrections, such as the Z boson transverse momentum, which is
-shown in figure~\ref{WZfigs}. Limits on anomalous quartic gauge couplings are
+shown in Fig.~\ref{fig:WZfigs}. Limits on anomalous quartic gauge couplings are
 calculated at 8 TeV, details of which can be found in the reference.
 
 
-\section{$ZZ$ Production}
+\section{ZZ Production with Leptonic Decays at 8 and 13 TeV}
 
 In spite of its low cross section, the $ZZ \rightarrow 4\ell$ process 
 is favorable experimentally due to its clean and fully reconstructed 
@@ -249,14 +252,14 @@ process to understand.
 
 \begin{figure}[htb]
   \centering
-    \includegraphics[height=2.8in]{figures/ZZCrossSection_vs_sqrtS.pdf}
-    \includegraphics[height=2.7in]{figures/ZZ_13TeV_mZZ_unfolded.pdf}
+    \includegraphics[height=2.4in]{figures/ZZCrossSection_vs_sqrtS.pdf}
+    \includegraphics[height=2.3in]{figures/ZZ_13TeV_mZZ_unfolded.pdf}
     \caption{ (Left) The total $pp \rightarrow$ ZZ cross section
       as a function of $\sqrt{s}$ measured by the CMS and 
       ATLAS experiments compared to the predictions of MCFM 7.0 and MATRIX v1.0.0\_beta4. 
       Correction factors are applied to the ATLAS measurements to account
       for the different Z boson mass windows used for the two measurements.
-      (Right) Differential cross section as a function
+      (Right) Normalized differential cross section as a function
       of the four-lepton mass compared to the predictions from
       MadGraph5\_aMC@NLO and POWHEG v2, both showered using PYTHIA 8.
       }
@@ -265,13 +268,15 @@ process to understand.
 
 Measurements of the ZZ production cross section, inclusive differential distributions,
 and differential distributions of ZZ production associated with jets
-were made using 35.9 fb$^{-1}$ of data collected by the CMS experiment in 2016
+were made using 35.9 fb$^{-1}$ of 13 TeV data collected by the CMS experiment in 2016
 \cite{CMS:2017ruh}
-\cite{CMS-PAS-SMP-16-019}. The analysis selects 4 leptons forming two composite 
+\cite{CMS-PAS-SMP-16-019}
+and 19.7 fb$^{-1}$ of data collected at 8 TeV in 2012~\cite{CMS-PAS-SMP-15-010}. 
+The analysis selects 4 leptons forming two composite 
 Z boson candidates with
 mass in the range $60 < m_{\ell^{+}\ell^{-}} 120$ GeV. The very low background
-in this channel allows only loose identification and isolation criteria to 
-be required. Backgrounds with four prompt leptons such as triboson and $t\bar{t}V$, 
+in this channel allows permits the use of loose identification and isolation criteria. 
+Backgrounds with four prompt leptons such as triboson and $t\bar{t}V$, 
 which have very
 low production cross sections, are evaluated using simulated samples. The 
 contribution from nonprompt leptons are estimated using the same technique
@@ -281,17 +286,22 @@ jets as the loose and tight lepton probe.
 
 \begin{figure}[htb]
   \centering
-    \includegraphics[height=2.5in]{figures/ZZ_13TeV_dEtajj_unfolded.pdf}
-    \includegraphics[height=2.5in]{figures/ZZ_8TeV_nJets_unfolded.pdf}
-  \caption{ Place the caption here}
+    \includegraphics[height=2.4in]{figures/ZZ_13TeV_dEtajj_unfolded.pdf}
+    \includegraphics[height=2.4in]{figures/ZZ_8TeV_nJets_unfolded.pdf}
+  \caption{(Left) Normalized differential cross section as a function of the
+          leading jet pseudorapidity separation in ZZ events with at least
+          two anti-$k_{T}$ $R=0.4$ jets at 13 TeV. 
+          (Right) Normalized differential cross section at 8 TeV
+          as a function the number of anti-$k_{T}$ $R=0.5$ jets in the event.}
   \label{fig:ZZjets}
 \end{figure}
 The total cross section measurements and its agreement with the SM
-prediction, computed at NNLO in QCD with MATRIX and NLO in QCD with MCFM
-are summarized in figure~\ref{ZZinclusive}, which also presents ATLAS results for comparison. 
+prediction, computed at NNLO in QCD with MATRIX~\cite{Cascioli:2014yka}\cite{Grazzini:2015hta} 
+and NLO in QCD with MCFM
+are summarized in Fig.~\ref{fig:ZZinclusive}, which also presents ATLAS results for comparison. 
 Differential cross sections were also measured for a variety of inclusive 
 and jet dependent distributions, unfolded using the iteratirve d'Agostini method. 
-The four-lepton mass is shown in figure~\ref{ZZinclusive}, which includes contributions 
+The four-lepton mass is also shown, which includes contributions 
 from resonant ZZ production, Z$\rightarrow 4\ell$ production, and $H \rightarrow 4\ell$ production. 
 For this distribution the mass constraint of the Z boson pairs was removed.
 Results are in good agreement with the SM predictions.
@@ -299,7 +309,7 @@ Results are in good agreement with the SM predictions.
 Differential measurements if ZZ boson production associated with jets are
 a direct test of higher-order calculations. Differential measurements of 
 the ZZ production cross section by number of anti-$k_{t}$ $R=0.5$ jets 
-at 8 TeV are shown in figure~\ref{ZZjets}. Also shown is the differential
+at 8 TeV are shown in Fig.~\ref{fig:ZZjets}. Also shown is the differential
 cross section for the pseudorapidity separation of
 anti-$k_{t}$ $R=0.4$ jets at 13 TeV for events with at least two jets.
 Understand this distribution is critical for extracting information
@@ -308,45 +318,51 @@ about vector boson scattering and vector boson quartic interactions.
 Limits on anomalous quartic gauge couplings are calculated at 13 TeV, 
 details of which can be found in the reference.
 
-\section{$WV$ Production with Semileptonic Decays}
+\section{WV Production with Semileptonic Decays}
 
-The large branching fraction with respect to leptonic decays 
+The large branching fraction 
 of vector bosons to hadronic decays offsets
 the challenge of reconstructing the vector boson from
 hadronic decay products. Diboson pairs with semileptonic decays
-are therefore attractive due to the balance of leptonic signiture, 
+are therefore attractive due to the balance of leptonic signature, 
 distinguishable above the large QCD multijet background at the LHC,
 and the favorable branching fraction of the hadronic decay.
 In particular, the higher production cross section
 allows sensitivity to tails of distributions most sensitive to new physics
-effects. 
-In addition, boosted object techniques all further discrimination of
-vector boson
+effects. Boosted object techniques all further discrimination of
+vector boson-like objects from background, and are particularly applicable
+in the new physics regime.
 
-The analyses selects a high $p{T}$ lepton and large missing transverse momentum, 
-associated with the leptonically decaying W boson. An additional anit$-k_{T}$
-(Cambridge-Aachen) ``fat jet'' is selected
+\begin{figure}[htb]
+  \centering
+    \includegraphics[height=2.35in]{figures/WV8TeV_ptJ_aC.png}
+    \includegraphics[height=2.15in]{figures/WV13TeV_mWW_aC.png}
+  \caption{ }
+  \label{fig:WV}
+\end{figure}
 
 
-Limits on charged aTGC parameters, using the effective Lagrangian formalism of ~\cite{Hagiwara:1993ck},
-are extracted via a fit to the WZ invariant mass (jet $p_{T}$) distribution at 13 (8) TeV.
+Limits on charged aTGC parameters, using the effective Lagrangian formalism 
+of ~\cite{Hagiwara:1993ck}, are calculated using 19.6 fb$^{-1}$ of 8 TeV 
+data~\cite{CMS:2017ruh}
+and 2.3 fb$^{-1}$ of 13 TeV data collected in 2015~\cite{Sirunyan:2017bey}.
+
+The analyses selects a high $p_{T}$ lepton and large missing transverse momentum, 
+associated with the leptonically decaying W boson. An additional anti-$k_{T}$
+(Cambridge-Aachen) ``fat jet'' is selected and tagged as a vector boson using
+subtructure techniques including prunning~\cite{Ellis:2009me} and 
+N-subjettiness~\cite{Thaler:2010tr}. Additional b-tagged jets in the event are 
+rejected to remove $t\bar{t}$ background. The analysis uses event categoritizations
+based on the jet mass to tag events as WZ-like or WW-like, but cannot fully 
+distinguish the two states.
+
+Limits are extracted via a fit to the WZ invariant mass (jet $p_{T}$) distribution at 13 (8) TeV.
 These distributions are shown in Fig.~\ref{fig:WV}.
 The 95\% CL limits from the 8 TeV analysis,
 \begin{equation}
   -0.011 < \lambda_{Z} < 0.011, \quad -0.044 < \Delta\kappa_{\gamma} < 0.063, \quad -0.0087 < \Delta g^{Z} < 0.024,
 \end{equation}
 are the most stringent to date on $\Delta\kappa_\gamma$ and $\Delta g^{Z}$.
-
-\cite{CMS:2017ruh}
-\cite{Sirunyan:2017bey}
-
-\begin{figure}[htb]
-  \centering
-    \includegraphics[height=2.35in]{figures/WV8TeV_ptJ_aC.png}
-    \includegraphics[height=2.15in]{figures/WV13TeV_mWW_aC.png}
-  \caption{ Place the caption here}
-  \label{fig:wvfigs}
-\end{figure}
 
 \section{Conclusions}
 \begin{figure}[htb]
@@ -359,12 +375,11 @@ are the most stringent to date on $\Delta\kappa_\gamma$ and $\Delta g^{Z}$.
 
 We have summarized recent diboson measurements from the CMS experiment using
 data collected at 8 TeV and 13 TeV. The current status of diboson cross sections 
-measured by the CMS experiment is shown in Figure~\ref{xsecs}. We note that 
+measured by the CMS experiment is shown in Fig.~\ref{fig:xsecs}. We note that 
 almost all results are compared to theoretical predictions at NNLO, where theoretical 
 error are typically below experimental ones. 
 Good agreement with the SM predictions is
 observed. 
-...... \cite{CMS:2016djf} \cite{Cascioli:2014yka} 
 
 \bibliographystyle{JHEP}
 \bibliography{bibliography}
