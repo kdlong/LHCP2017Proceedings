@@ -7,6 +7,7 @@
 
 \documentclass[10pt]{article}
 \usepackage{graphicx}
+\usepackage{amsmath}
 
 
 
@@ -84,7 +85,7 @@ University of Wisconsin -- Madison, Madison, WI 53706-1390, USA}
 \vfill
 \begin{Abstract}
 
-Recent results from the CMS experiment on the simultaneous 
+Recent results from the CMS experiment on the 
 production of multiple vector bosons in proton-proton collisions at the 
 CERN LHC are presented. Measurements of $WZ$ and $ZZ$ production with 
 fully leptonic decays, $Z(\nu\nu)\gamma$, and 
@@ -136,35 +137,7 @@ of measurements for a variety of vector boson pairs and decays is presented,
 each offering a unique probe of the SM and possible new physics. Full details of 
 the analyses can be found in the references.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%
-%%   use this format to include a LaTeX table  into your paper
-%%
-%\begin{table}[t]
-%\begin{center}
-%\begin{tabular}{l|ccc}  
-%Patient &  Initial level($\mu$g/cc) &  w. Magnet &  
-%w. Magnet and Sound \\ \hline
-% Guglielmo B.  &   0.12     &     0.10      &     0.001  \\
-% Ferrando di N. &  0.15     &     0.11      &  $< 0.0005$ \\ \hline
-%\end{tabular}
-%\caption{ place the caption here }
-%\label{tab:table1}
-%\end{center}
-%\end{table}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Differential and Inclusive Cross Section Measurements}
-\subsection{$Z(\nu\nu)\gamma$ Production}
-\begin{figure}[htb]
-  \centering
-    \includegraphics[height=2in]{figures/MonoPhoto_ETmiss.pdf}
-  \caption{ }
-  \label{fig:zgamma_etmiss}
-\end{figure}
-See Figure \ref{fig:zgamma_etmiss}
-\cite{CMS-PAS-SMP-16-004}
-
+\section{$Z(\nu\nu)\gamma$ Production at 13 TeV}
 The production of a Z boson produced in association with a photon,
 with the Z decaying to pair of neutrinos, can only be produced through
 initial-state radiation of a photon from the incoming quarks in the standard model.
@@ -176,7 +149,8 @@ dark matter searches in the mono-photon channel.
 
 The $pp \rightarrow Z\gamma \rightarrow \nu\bar{\nu}\gamma$ fiducial cross section 
 has been measured for transverse energy $E_{T}^{\gamma} > 175$ GeV and photon pseudorapidity
-$abs{\eta^{\gamma}} < $ 1.44 using 2.3 fb$^{-1}$ of data collected by the CMS experiment in 2015.
+$\lvert\eta^{\gamma}\rvert < $ 1.44 using 2.3 fb$^{-1}$ of data collected by the CMS experiment in 2015
+\cite{CMS-PAS-SMP-16-004}.
 The analysis selects a well-identified photon with transverse energy $E_{T}^{\gamma}$
 
 The primary backgrounds to the signal process are experimental in nature, including 
@@ -196,7 +170,7 @@ The measured fiducial cross section of
 is found to be in agreement with the standard model prediction of $65.5 \pm 3.3$ fb, computed at
 NNLO with MATRIX. \cite{bleh}
 
-\subsection{$W^{\pm}Z$ Production at 8 and 13 TeV}
+\section{$W^{\pm}Z$ Production at 8 and 13 TeV}
 
 Measurements of WZ production with fully leptonic decays probe the charged
 gauge interactions of the SM. The relatively clean three-lepton final state
@@ -206,6 +180,27 @@ missing transverse momentum $p_{T}^{miss} > 30$ GeV. The mass of the 3 leptons
 is required to have $m_{3\ell} > $ 100 GeV reject events $Z\gamma$ events where a photon
 radiated from the leptonic Z decay is misidentified as an electron. Events with
 a b-tagged jet are rejected to reduce $t\bar{t}$ background.
+
+
+\begin{figure}[htb]
+  \centering
+    \includegraphics[height=2.8in]{figures/WZCrossSection_vs_sqrtS.pdf}
+    \includegraphics[height=2.8in]{figures/WZ8TeV_ptZ_unfolded.png}
+    \caption{ (Left) The total $pp \rightarrow WZ$ cross section
+      as a function of $\sqrt{s}$ measured by the CMS and 
+      ATLAS experiments compared to the predictions of MCFM 7.0 and MATRIX v1.0.0\_beta4. 
+      The CMS 13 TeV cross section are calculated for the Z boson mass window $60 - 120$ GeV. 
+      The CMS 7 and 8  TeV  cross sections are calculated for the Z boson mass window $71 - 111$ GeV.
+      ATLAS measurements are performed with the Z boson mass window $66 - 116$  GeV.
+      (Right) Differential cross section at $sqrt{s} = 8$ TeV as a function
+      of the Z boson transverse momentum,
+      compared to
+      the fixed-order prediction from MCFM 6.3 and the prediction from
+      MadGraph5.1+Pythia6.4, using MLM merging of tree-level contributions 
+      for up to two additional partons.
+      }
+  \label{fig:WZfigs}
+\end{figure}
 
 Backgrounds for this measurement are categorized into processes producing at least
 three prompt isolated leptons ($\ell = e, \mu$), including ZZ, triboson, and 
@@ -239,29 +234,11 @@ iterative d'Agostini \cite{bleh} method, are presented using 19.6 fb$^{-1}$
 collected by the CMS experiment in 2012 at 8 TeV. These measurements allow for careful
 comparisons of theoretical predictions in distributions sensitive 
 to higher-order corrections, such as the Z boson transverse momentum, which is
-shown in figure~\ref{WZfigs}.
+shown in figure~\ref{WZfigs}. Limits on anomalous quartic gauge couplings are
+calculated at 8 TeV, details of which can be found in the reference.
 
-\begin{figure}[htb]
-  \centering
-    \includegraphics[height=2in]{figures/WZCrossSection_vs_sqrtS.pdf}
-    \includegraphics[height=2in]{figures/WZ8TeV_ptZ_unfolded.png}
-    \caption{ (Left) The total $pp \rightarrow WZ$ cross section
-      as of $\sqrt{s}$ measured by the CMS and 
-      ATLAS experiments compared to the predictions of MCFM 7.0 and MATRIX v1.0.0\_beta4. 
-      The CMS 13 TeV cross section are calculated for the Z boson mass window $60 - 120$ GeV. 
-      The CMS 7 and 8  TeV  cross sections are calculated for the Z boson mass window $71 - 111$ GeV.
-      ATLAS measurements are performed with the Z boson mass window $66 - 116$  GeV.
-      (Right) Differential cross section at $sqrt{s} = 8$ TeV as a function
-      of the Z boson transverse momentum,
-      compared to
-      the fixed-order prediction from MCFM 6.3 and the prediction from
-      MadGraph5.1+Pythia6.4, using MLM merging of tree-level contributions 
-      for up to two additional partons.
-      }
-  \label{fig:WZfigs}
-\end{figure}
 
-\subsection{$ZZ$ Production}
+\section{$ZZ$ Production}
 
 In spite of its low cross section, the $ZZ \rightarrow 4\ell$ process 
 is favorable experimentally due to its clean and fully reconstructed 
@@ -272,13 +249,26 @@ process to understand.
 
 \begin{figure}[htb]
   \centering
-    \includegraphics[height=2in]{figures/ZZCrossSection_vs_sqrtS.pdf}
-    \includegraphics[height=2in]{figures/ZZ_13TeV_dEtajj_unfolded.pdf}
-  \caption{ Place the caption here}
+    \includegraphics[height=2.8in]{figures/ZZCrossSection_vs_sqrtS.pdf}
+    \includegraphics[height=2.7in]{figures/ZZ_13TeV_mZZ_unfolded.pdf}
+    \caption{ (Left) The total $pp \rightarrow$ ZZ cross section
+      as a function of $\sqrt{s}$ measured by the CMS and 
+      ATLAS experiments compared to the predictions of MCFM 7.0 and MATRIX v1.0.0\_beta4. 
+      Correction factors are applied to the ATLAS measurements to account
+      for the different Z boson mass windows used for the two measurements.
+      (Right) Differential cross section as a function
+      of the four-lepton mass compared to the predictions from
+      MadGraph5\_aMC@NLO and POWHEG v2, both showered using PYTHIA 8.
+      }
   \label{fig:ZZinclusive}
 \end{figure}
 
-The analysis selects 4 leptons forming two composite Z boson candidates with
+Measurements of the ZZ production cross section, inclusive differential distributions,
+and differential distributions of ZZ production associated with jets
+were made using 35.9 fb$^{-1}$ of data collected by the CMS experiment in 2016
+\cite{CMS:2017ruh}
+\cite{CMS-PAS-SMP-16-019}. The analysis selects 4 leptons forming two composite 
+Z boson candidates with
 mass in the range $60 < m_{\ell^{+}\ell^{-}} 120$ GeV. The very low background
 in this channel allows only loose identification and isolation criteria to 
 be required. Backgrounds with four prompt leptons such as triboson and $t\bar{t}V$, 
@@ -289,45 +279,91 @@ described for WZ in the previous section, however, the ``tight to loose'' transf
 factors are derived using a sample of Drell-Yan events, using associated 
 jets as the loose and tight lepton probe.
 
-Briefly describe results yo
-
-
 \begin{figure}[htb]
   \centering
-    \includegraphics[height=2in]{figures/ZZ_8TeV_nJets_unfolded.pdf}
-    \includegraphics[height=2in]{figures/ZZ_13TeV_dEtajj_unfolded.pdf}
+    \includegraphics[height=2.5in]{figures/ZZ_13TeV_dEtajj_unfolded.pdf}
+    \includegraphics[height=2.5in]{figures/ZZ_8TeV_nJets_unfolded.pdf}
   \caption{ Place the caption here}
   \label{fig:ZZjets}
 \end{figure}
-\cite{CMS:2017ruh}
-\cite{CMS-PAS-SMP-16-019}
+The total cross section measurements and its agreement with the SM
+prediction, computed at NNLO in QCD with MATRIX and NLO in QCD with MCFM
+are summarized in figure~\ref{ZZinclusive}, which also presents ATLAS results for comparison. 
+Differential cross sections were also measured for a variety of inclusive 
+and jet dependent distributions, unfolded using the iteratirve d'Agostini method. 
+The four-lepton mass is shown in figure~\ref{ZZinclusive}, which includes contributions 
+from resonant ZZ production, Z$\rightarrow 4\ell$ production, and $H \rightarrow 4\ell$ production. 
+For this distribution the mass constraint of the Z boson pairs was removed.
+Results are in good agreement with the SM predictions.
 
-Describe jets, motivation, and results yo
+Differential measurements if ZZ boson production associated with jets are
+a direct test of higher-order calculations. Differential measurements of 
+the ZZ production cross section by number of anti-$k_{t}$ $R=0.5$ jets 
+at 8 TeV are shown in figure~\ref{ZZjets}. Also shown is the differential
+cross section for the pseudorapidity separation of
+anti-$k_{t}$ $R=0.4$ jets at 13 TeV for events with at least two jets.
+Understand this distribution is critical for extracting information
+about vector boson scattering and vector boson quartic interactions.
 
-\section{Limits on Anomalous Gauge Couplings}
+Limits on anomalous quartic gauge couplings are calculated at 13 TeV, 
+details of which can be found in the reference.
 
-\subsection{Limits from $WV$ Production with Semi-leptonic Decays}
+\section{$WV$ Production with Semileptonic Decays}
 
-Describe anlaysis and limits
+The large branching fraction with respect to leptonic decays 
+of vector bosons to hadronic decays offsets
+the challenge of reconstructing the vector boson from
+hadronic decay products. Diboson pairs with semileptonic decays
+are therefore attractive due to the balance of leptonic signiture, 
+distinguishable above the large QCD multijet background at the LHC,
+and the favorable branching fraction of the hadronic decay.
+In particular, the higher production cross section
+allows sensitivity to tails of distributions most sensitive to new physics
+effects. 
+In addition, boosted object techniques all further discrimination of
+vector boson
+
+The analyses selects a high $p{T}$ lepton and large missing transverse momentum, 
+associated with the leptonically decaying W boson. An additional anit$-k_{T}$
+(Cambridge-Aachen) ``fat jet'' is selected
+
+
+Limits on charged aTGC parameters, using the effective Lagrangian formalism of ~\cite{Hagiwara:1993ck},
+are extracted via a fit to the WZ invariant mass (jet $p_{T}$) distribution at 13 (8) TeV.
+These distributions are shown in Fig.~\ref{fig:WV}.
+The 95\% CL limits from the 8 TeV analysis,
+\begin{equation}
+  -0.011 < \lambda_{Z} < 0.011, \quad -0.044 < \Delta\kappa_{\gamma} < 0.063, \quad -0.0087 < \Delta g^{Z} < 0.024,
+\end{equation}
+are the most stringent to date on $\Delta\kappa_\gamma$ and $\Delta g^{Z}$.
 
 \cite{CMS:2017ruh}
 \cite{Sirunyan:2017bey}
 
 \begin{figure}[htb]
   \centering
-    \includegraphics[height=2in]{figures/WV8TeV_ptJ_aC.png}
-    \includegraphics[height=2in]{figures/WV13TeV_mWW_aC.png}
+    \includegraphics[height=2.35in]{figures/WV8TeV_ptJ_aC.png}
+    \includegraphics[height=2.15in]{figures/WV13TeV_mWW_aC.png}
   \caption{ Place the caption here}
-  \label{fig:zgamma_etmiss}
+  \label{fig:wvfigs}
 \end{figure}
 
-\subsection{Limits from Diboson States with Fully Leptonic Decays}
-
-Briefly dump some plots I guess
-
 \section{Conclusions}
+\begin{figure}[htb]
+  \centering
+    \includegraphics[height=2.35in]{figures/CrossSectionSummary.pdf}
+  \caption{ Summary of diboson total production cross sections measured by the CMS experiment. }
+  \label{fig:xsecs}
+\end{figure}
 
-Very brief, maybe a summary plot
+
+We have summarized recent diboson measurements from the CMS experiment using
+data collected at 8 TeV and 13 TeV. The current status of diboson cross sections 
+measured by the CMS experiment is shown in Figure~\ref{xsecs}. We note that 
+almost all results are compared to theoretical predictions at NNLO, where theoretical 
+error are typically below experimental ones. 
+Good agreement with the SM predictions is
+observed. 
 ...... \cite{CMS:2016djf} \cite{Cascioli:2014yka} 
 
 \bibliographystyle{JHEP}
